@@ -15,15 +15,18 @@
         <p>Desarrollador fullstack | Estudiante de Ingeniería en TI</p>
     </header>
 
-    <nav>
-        <a target="_blank" href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Mi Experiencia</a>
-        <a href="#">Contáctame</a>
+    <!-- links -->
+    <nav id="menu-principal">
+        <ul>
+            <li><a target="_blank" href="#bienvenida">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#mi-experiencia">Mi Experiencia</a></li>
+            <li><a href="#contactame">Contáctame</a></li>
+        </ul>
     </nav>
 
     <main>
-        <section>
+        <section id="bienvenida">
             <h2>Bienvenido a mi Portafolio Profesional</h2>
             <p>Hola, soy Jesús Alexander, un desarrollador fullstack </p>
             <p>Explora mis proyectos y habilidades en las secciones de arriba.</p>
@@ -33,50 +36,76 @@
             </p>
             <img src="image/foto.png" alt="Foto de perfil" id="foto-perfil" />
             <aside>
-                <h3> ¿Sabías qué...? </h3>
-                <p> Actualmente estudio la carrera de Tecnologías de la Información e Innovación Digital</p>
+                <div id="sabias-que">
+                    <h2> ¿Sabías qué...? </h2>
+                    <p> Actualmente estudio la carrera de Tecnologías de la Información e Innovación Digital</p>
+                </div>
             </aside>
         </section>
-        <h2>Experiencia Profesional</h2>
-        <article>
-            <h3>Proyecto Integrador 1 </h3>
-            <p>Lorem ipsum is simply dummy text of the printing</p>
-            <time datetime= 2025-05>Mayo 2025</time> - <time datetime= 2025-07>Julio 2025</time>
-            <ul>
-                <li> Tecnologías.NET </li>
-                <li> Gestión de Inventarios</li>
-                <li> Basado en la ODS </li>
-                <li> Trabajo en equipo</li>
-            </ul>
-        </article>
-        <article>
-            <h3>Proyecto Integrador 2 </h3>
-            <p>Lorem ipsum is simply dummy text of the printing</p>
-            <time datetime= 2025-05>Mayo 2025</time> - <time datetime= 25-07>Julio 2025</time>
-            <ul>
-                <li> Tecnologías.NET </li>
-                <li> Gestión de Inventarios</li>
-                <li> Basado en la ODS </li>
-                <li> Trabajo en equipo</li>
-            </ul>
-        </article>
-        <article>
-            <h3>Proyecto Integrador 3 </h3>
-            <p>Lorem ipsum is simply dummy text of the printing</p>
-            <time datetime= 2025-04> Abril 2025</time> - <time datetime= 2025-02 > Febrero 2025 </time>
-            <ul>
-                <li> Tecnologías.NET </li>
-                <li> Gestión de Inventarios</li>
-                <li> Basado en la ODS </li>
-                <li> Trabajo en equipo</li>
-            </ul>
-        </article>
-    </main>
+        <h2 id="experiencia-titulo">Experiencia Profesional</h2>
+        <div id="lista-proyectos">
 
-    <footer>
-        <p>&copy; 2025. Todos los derechos reservados</p>
-        <address>Cancún, QRoo, México</address>
-    </footer>
+            <article class="proyecto">
+                <h3>Proyecto Integrador 1 </h3>
+                <p>Lorem ipsum is simply dummy text of the printing</p>
+                <time datetime=2025-05>Mayo 2025</time> - <time datetime=2025-07>Julio 2025</time>
+                <ul>
+                    <li> Tecnologías.NET </li>
+                    <li> Gestión de Inventarios</li>
+                    <li> Basado en la ODS </li>
+                    <li> Trabajo en equipo</li>
+                </ul>
+            </article>
+            <article class="proyecto">
+                <h3>Proyecto Integrador 2 </h3>
+                <p>Lorem ipsum is simply dummy text of the printing</p>
+                <time datetime=2025-05>Mayo 2025</time> - <time datetime=25-07>Julio 2025</time>
+                <ul>
+                    <li> Tecnologías.NET </li>
+                    <li> Gestión de Inventarios</li>
+                    <li> Basado en la ODS </li>
+                    <li> Trabajo en equipo</li>
+                </ul>
+            </article>
+            <article class="proyecto">
+                <h3>Proyecto Integrador 3 </h3>
+                <p>Lorem ipsum is simply dummy text of the printing</p>
+                <time datetime=2025-04> Abril 2025</time> - <time datetime=2025-02> Febrero 2025 </time>
+                <ul>
+                    <li> Tecnologías.NET </li>
+                    <li> Gestión de Inventarios</li>
+                    <li> Basado en la ODS </li>
+                    <li> Trabajo en equipo</li>
+                </ul>
+            </article>
+            <div id="lista-habilidades">
+                <h2 id="habilidades-titulo">Habilidades Técnicas</h2>
+                <div class="habilidades-texto">
+                    <p>HTML, CSS, JavaScript</p><progress class="habilidades" value="40" max="100"></progress>
+                    <p>C#, .NET</p><progress value="60" max="100"></progress>
+                    <p>SQL Server, MySQL</p><progress value="90" max="100"></progress>
+                    <p>Git y GitHub</p><progress value="70" max="100"></progress>
+                    <p>Metodologías Ágiles (Scrum)</p><progress value="75" max="100"></progress>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <section id="contacto">
+                <h2 id="contactame">Contáctame</h2>
+                <div><input type="text" placeholder="Nombre" id="nombre" /></div>
+                <div><input type="email" placeholder="Correo Electrónico" id="correo" /></div>
+                <div><textarea placeholder="Mensaje" id="mensaje"></textarea></div>
+                <div><button type="submit">Enviar</button></div>
+            </section>
+        </div>
+    </main>
 </body>
 
+<!--  Pie de página -->
+    <div id="pie-pagina">
+        <footer>
+            <p> &copy; 2024 Jesús Alexander. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </html>
