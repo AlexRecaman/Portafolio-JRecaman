@@ -135,12 +135,31 @@ p {
 }
 
 #contacto {
-    border: solid 2px black;
-    margin: 10px 10px 10px 10px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-top: solid 5px #980e0e;
+}
+ 
+#contacto label {
+    font-size: 20px;
+}
+ 
+#contacto input,
+textarea {
+    font-size: 30px;
+    border: solid 1px #1103dd;
     padding: 10px;
     width: 30%;
-    gap: 20px;
-    float: right;
+}
+ 
+#contacto button {
+    background-color: #440368;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    font-size: 20px;
 }
 
 #pie-pagina {
@@ -151,4 +170,13 @@ p {
     margin: 10px 10px 10px 10px;
     padding: 10px;
     font-family: "Lato", sans-serif;
+}
+
+.campos {
+    padding-top: 20px;
+}
+
+#contacto .opciones {
+    width: 5;
+    padding: 20;
 }

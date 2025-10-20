@@ -92,20 +92,52 @@
 
         <div>
             <section id="contacto">
-                <h2 id="contactame">Contáctame</h2>
-                <div><input type="text" placeholder="Nombre" id="nombre" /></div>
-                <div><input type="email" placeholder="Correo Electrónico" id="correo" /></div>
-                <div><textarea placeholder="Mensaje" id="mensaje"></textarea></div>
-                <div><button type="submit">Enviar</button></div>
+                <h2>Contáctame</h2>
+                <form>
+                    <div class="campos">
+                        <label>Nombre completo</label>
+                        <input type="text" value="" placeholder="Nombre completo" required />
+                    </div>
+                    <div class="campos">
+                        <label>Correo Electrónico</label>
+                        <input type="email" value="" placeholder="ejemplo@gmail.com" required />
+                    </div>
+                    <div class="campos">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="campos">
+                        <label>Modo de Contacto</label>
+                        <input type="checkbox" name="canal"></input>
+                    </div>
+                    <div class="campos">
+                        <label>¿Es cliente?</label>
+                        <input type="radio" name="cliente" class="opciones"> Si</input>
+                        <input type="radio" name="cliente" class="opciones"> No</input>
+                    </div>
+                    <div class="campos">
+                        <label>Numero de colaboradores</label>
+                        <input type="number" />
+                    </div>
+                    <div class="campos">
+                        <label>Enviar requerimientos</label>
+                        <input type="file" name="foto">
+                    </div>
+                    <div class="campos">
+                        <!--input type="button" value="Enviar" /-->
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </section>
-        </div>
     </main>
 </body>
 
 <!--  Pie de página -->
-    <div id="pie-pagina">
-        <footer>
-            <p> &copy; 2024 Jesús Alexander. Todos los derechos reservados.</p>
-        </footer>
-    </div>
+<div id="pie-pagina">
+    <footer>
+        <p> &copy; 2024 Jesús Alexander. Todos los derechos reservados.</p>
+    </footer>
+</div>
+
 </html>
