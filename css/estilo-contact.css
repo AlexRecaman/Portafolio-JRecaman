@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+/* Header fijo */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #004d2e;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logo h4 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.site-nav a:hover {
+  background-color: white;
+  color: #004d2e;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* Contacto */
+.contacto {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contacto h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contacto p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #006837;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d2e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
